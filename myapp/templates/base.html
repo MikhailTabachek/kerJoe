@@ -16,6 +16,9 @@
         <li class="nav-link">
             <a href="{{url_for('core.info')}}">About</a>
         </li>
+        <li class="nav-link">
+            <a href="{{url_for('joke_posts.create_post')}}">Add a Joke</a> 
+        </li>
 
         {% if current_user.is_authenticated %}
         <li class="nav-link">
