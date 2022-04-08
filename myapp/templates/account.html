@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-   
+
 <div class="jumbotron">
     <div align="center">
-        <h1>Welcome to the page for {{current_user.username}}</h1>
+        <h1>Welcome to Joker {{current_user.username}}</h1>
     </div>
 </div>
 
@@ -20,12 +20,10 @@
             {{form.email.label(class='form-group')}} 
             {{form.email(class='form-control')}}
         </div>
-      
+
         <div class="form-group">
             {{form.submit(class='btn btn-primary')}}
         </div>
-       
-       
     </form>
 </div>
 {% endblock %}

@@ -1,0 +1,57 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages2.alphacoders.com%2F104%2Fthumb-1920-1046515.jpg");
+  background-position: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+}
+
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(0, 255, 255);
+  margin: 0;
+  height: 60px;
+  width: 100%;
+}
+
+
+.nav-link{
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-decoration: none;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.card{
+  
+}
+
+.nav-right{
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+.nav-left{
+  display: flex;
+  flex-direction: row;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+

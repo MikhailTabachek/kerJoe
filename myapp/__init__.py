@@ -1,6 +1,6 @@
 # myapp/__init__.py 
 
-from flask import Flask 
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import os
 from os import environ, path 
