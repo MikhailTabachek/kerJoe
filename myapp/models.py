@@ -18,6 +18,7 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(64), unique=True, index=True)
     username = db.Column(db.String(64), unique=True, index=True)
     password_hash = db.Column(db.String(128))
+    posts = db.relationship('JokePost', backref='author', lazy=True)
 
     def __init__(self, email, username, password):
         self.email = email
@@ -37,6 +38,7 @@ class JokePost(db.Model):
     date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     title = db.Column(db.String(140), nullable=False)
     text = db.Column(db.Text, nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
     def __init__(self, title, text, user_id):
         self.title = title
