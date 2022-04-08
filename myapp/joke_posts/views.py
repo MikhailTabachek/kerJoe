@@ -18,3 +18,9 @@ def create_post():
         print('Joke was created')
         return redirect(url_for('core.index'))
     return render_template('create_post.html', form=form)
+
+
+@joke_posts.route('/<int:joke_post_id>')
+def joke_post(joke_post_id):
+    joke_post = JokePost.query.get_or_404(joke_post_id) 
+    return render_template('joke_post.html', title=joke_post.title, date=joke_post.date, post=joke_post)
