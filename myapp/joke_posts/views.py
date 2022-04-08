@@ -47,3 +47,16 @@ def update(joke_post_id):
         form.text.data = joke_post.text
 
     return render_template('create_post.html',title='Updating',form=form)
+
+@joke_posts.route('/<int:joke_post_id>/delete',methods=['GET','POST'])
+@login_required
+def delete_post(joke_post_id):
+
+    joke_post = JokePost.query.get_or_404(joke_post_id)
+    if joke_post.author != current_user:
+        abort(403)
+
+    db.session.delete(joke_post)
+    db.session.commit()
+    flash('Joke was Deleted')
+    return redirect(url_for('core.index'))
