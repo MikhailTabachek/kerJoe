@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='./main.css') }}">
 
         <!-- Animate Animated -->
-        
+
         <head>
             <link
                 rel="stylesheet"
@@ -60,5 +60,21 @@
             {% endblock %}
         </div>
     </div>
+
+    <nav class="pages" aria-label="Page Navigation example">
+        <ul class="pagination">
+            {% for page_num in joke_posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+                {% if joke_posts.page == page_num %}
+                <li class="page-number">
+                    <a class="page-link" href="{{url_for('core.index', page=page_num)}}">{{ page_num }}</a>
+                </li>
+                {% else %}
+                <li class="page-item">
+                    <a class="page-link" href="{{url_for('core.index', page=page_num)}}">{{ page_num }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
 </body>
 </html>

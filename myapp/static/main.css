@@ -10,6 +10,7 @@ body{
   background-repeat: no-repeat;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
+  /* height: 100vh; */
 }
 
 
@@ -89,10 +90,28 @@ h1{
   background-color: black;
 }
 
-.container{
+.background{
   /* border: 3px solid black; */
   margin-top: 10vh;
+  min-width: 20vh;
   /* background-image: url(""); */
   /* background-image: linear-gradient(to bottom, rgb(18, 18, 18) , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); */
 }
+
+.pages{
+  position: absolute;
+  width: 50%;
+  bottom: 10px;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.page-link{
+  font-size: 20px;
+  color: aliceblue;
+}
+
 
