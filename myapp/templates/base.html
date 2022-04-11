@@ -37,19 +37,21 @@
         {% if current_user.is_authenticated %}
         <div class="nav-right">
             <li class="nav-link">
-                <a class="nav-element" href="{{url_for('users.account')}}">Account</a>
+                <a class="nav-element" href="{{url_for('users.account')}}">My Account</a>
             </li>
             <li class="nav-link">
                 <a class="nav-element" href="{{url_for('users.logout')}}">Log Out</a>
             </li>
         </div>
         {% else %}
-        <li class="nav-link">
-            <a class="nav-element" href="{{url_for('users.login')}}">Log In</a>
-        </li>
-        <li class="nav-link">
-            <a class="nav-element" href="{{url_for('users.register')}}">Register</a>
-        </li>
+        <div class="nav-right">
+            <li class="nav-link">
+                <a class="nav-element" href="{{url_for('users.login')}}">Log In</a>
+            </li>
+            <li class="nav-link">
+                <a class="nav-element" href="{{url_for('users.register')}}">Register</a>
+            </li>
+        </div>
         {% endif %}
     </ul>
 
@@ -60,21 +62,5 @@
             {% endblock %}
         </div>
     </div>
-
-    <nav class="pages" aria-label="Page Navigation example">
-        <ul class="pagination">
-            {% for page_num in joke_posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
-                {% if joke_posts.page == page_num %}
-                <li class="page-number">
-                    <a class="page-link" href="{{url_for('core.index', page=page_num)}}">{{ page_num }}</a>
-                </li>
-                {% else %}
-                <li class="page-item">
-                    <a class="page-link" href="{{url_for('core.index', page=page_num)}}">{{ page_num }}</a>
-                </li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-    </nav>
 </body>
 </html>

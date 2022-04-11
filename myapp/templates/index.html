@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="jumbotron">
-        <h1 class="animate__animated animate__animated animate__bounce">All Jokes</h1>
+        <h1 class="animate__animated animate__rubberBand">All Jokes</h1>
     </div>
     <div class="container">
         {% for post in joke_posts.items %}
@@ -10,7 +10,7 @@
                     <h2>
                         <a class="card-title" href="{{url_for('joke_posts.joke_post', joke_post_id=post.id)}}">{{post.title}}</a>
                         <br>
-                        <a href="{{url_for('users.user_posts', username=post.author.username)}}">Written by: {{post.author.username}}</a>
+                        <a  href="{{url_for('users.user_posts', username=post.author.username)}}">Written by: {{post.author.username}}</a>
                     </h2>
                     <p>Posted on: {{post.date.strftime('%Y - %m - %d')}}</p>
                     <a class="btn btn-primary" href="{{url_for('joke_posts.joke_post', joke_post_id=post.id)}}">Read a Joke</a>
@@ -19,5 +19,19 @@
         {% endfor %}
     </div>
 
-    
+    <nav class="pages/" aria-label="Page Navigation example">
+        <ul class="pagination">
+            {% for page_num in joke_posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+                {% if joke_posts.page == page_num %}
+                <li class="page-number">
+                    <a class="page-link" href="{{url_for('core.index', page=page_num)}}">{{ page_num }}</a>
+                </li>
+                {% else %}
+                <li class="page-item">
+                    <a class="page-link" href="{{url_for('core.index', page=page_num)}}">{{ page_num }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
 {% endblock %}
