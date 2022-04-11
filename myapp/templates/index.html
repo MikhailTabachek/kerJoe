@@ -1,18 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="jumbotron">
-        <h1>Joke</h1>
+        <h1 class="animate__animated animate__animated animate__bounce">All Jokes</h1>
     </div>
     <div class="container">
         {% for post in joke_posts.items %}
             <div class="card">
-                <div class="car-boy">
+                <div class="card-body">
                     <h2>
                         <a class="card-title" href="{{url_for('joke_posts.joke_post', joke_post_id=post.id)}}">{{post.title}}</a>
+                        <br>
                         <a href="{{url_for('users.user_posts', username=post.author.username)}}">Written by: {{post.author.username}}</a>
                     </h2>
-                    <p>Published on: {{post.date.strftime('%Y - %m - %d')}}</p>
-                    <a class="btn btn-primary" href="{{url_for('joke_posts.joke_post', joke_post_id=post.id)}}">Read Joke</a>
+                    <p>Posted on: {{post.date.strftime('%Y - %m - %d')}}</p>
+                    <a class="btn btn-primary" href="{{url_for('joke_posts.joke_post', joke_post_id=post.id)}}">Read a Joke</a>
                 </div>
             </div>
         {% endfor %}
