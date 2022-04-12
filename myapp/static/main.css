@@ -339,6 +339,7 @@ a.page-link:hover{
   font-family: 'Special Elite','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
   text-align: center;
+  text-transform: uppercase;
   /* box-shadow: 2px 2px 4px rgb(61, 60, 60); */
 }
 
@@ -368,6 +369,63 @@ a.page-link:hover{
   text-shadow: 1px 1px 3px black;
 }
 
+.login{
+  color: black;
+  font-family: 'Special Elite','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+
+/* input.button {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #eeeeee;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: #153f00;
+  padding: 15px 50px;
+  margin: 0 auto;
+}
+
+input.button:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 470%;
+  width: 140%;
+  background: #52b71f;
+  transition: all .5s ease-in-out;
+  transform: translateX(-100%) translateY(-25%) rotate(45deg);
+}
+
+input.button:hover:after {
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  color: aqua;
+} */
+
+.login-btn{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 37px;
+  color: #6c984a;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #000000, 0px 2px 0px #000000, 0px 3px 0px #000000;
+  background-color: #4f69a700;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: .2;
+}
+
+.login-btn:focus:hover {
+  padding-top: 4px;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.32), 0px 1px 0px #000000, 0px 1px 0px #000000, 0px 2px 0px #000000;
+}
 
 
 

@@ -1,12 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
    
-<form method="POST">
+<form class="login" method="POST">
     {{form.hidden_tag()}}
-    {{form.email.label}}{{form.email(class="new-joke-input")}}<br>
-    {{form.username.label}}{{form.username(class="new-joke-input")}}<br>
-    {{form.password.label}}{{form.password(class="new-joke-input")}}<br>
-    {{form.pass_confirm.label}}{{form.pass_confirm(class="new-joke-input")}}<br>
-    {{form.submit()}}
+    {{form.email.label}} <br>
+    {{form.email(class="new-joke-input")}}<br>
+    {{form.username.label}} <br>
+    {{form.username(class="new-joke-input")}}<br>
+    {{form.password.label}} <br>
+    {{form.password(class="new-joke-input")}}<br>
+    {{form.pass_confirm.label}} <br>
+    {{form.pass_confirm(class="new-joke-input")}}<br>
+    {{form.submit(class="login-btn")}}
 </form>
 {% endblock %}
