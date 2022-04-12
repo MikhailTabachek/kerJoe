@@ -221,22 +221,38 @@ a.page-link:hover{
 }
 
 .update-joke{
-  height: 30px;
-  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
   border: 1px solid orange;
   text-align: center;
-  padding-top: 15px;
+  /* padding-top: 25px; */
   border-radius: 5px;
+  font-size: larger;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.update-joke:hover{
+  background-color: orange;
 }
 
 .delete-joke{
 margin-top: 15px;
-background-color: red;
-height: 30px;
-width: 120px;
+background-color: rgb(255, 255, 255);
+height: 50px;
+width: 150px;
 border-radius: 5px;
 border: 1px solid black ;
+font-family: 'Gloria Hallelujah', cursive;
+font-size: larger;
 }
+
+.delete-joke:hover{
+  background-color: rgba(237, 20, 20, 0.537);
+}
+
 
 .edit-delete-buttons{
   margin-top: 25px;
