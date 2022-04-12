@@ -93,6 +93,10 @@ h1{
   margin: 10px 0 10px 0;
 }
 
+h3{
+  margin-top: 0;
+}
+
 .background{
   display: flex;
   flex-direction: column;
@@ -114,6 +118,7 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 80vh;
 }
 
 .card{
@@ -205,6 +210,7 @@ a.page-link:hover{
 }
 
 .joker-button{
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -228,7 +234,7 @@ a.page-link:hover{
   width: 150px;
   border: 1px solid orange;
   text-align: center;
-  /* padding-top: 25px; */
+  margin-bottom: 50px;
   border-radius: 5px;
   font-size: larger;
   font-family: 'Gloria Hallelujah', cursive;
@@ -238,19 +244,25 @@ a.page-link:hover{
   background-color: orange;
 }
 
-.delete-joke{
-margin-top: 15px;
-background-color: rgb(255, 255, 255);
-height: 50px;
-width: 150px;
-border-radius: 5px;
-border: 1px solid black ;
-font-family: 'Gloria Hallelujah', cursive;
-font-size: larger;
+.delete-btn{
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size:x-large;
+  border: 1px solid rgb(156, 25, 25);
+  overflow: hidden;
+  z-index: 5;
+  position: relative;
+  transition: .3s;
 }
 
-.delete-joke:hover{
-  background-color: rgba(237, 20, 20, 0.537);
+.delete-btn:hover{
+  background-color: rgb(155, 26, 26);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -263,76 +275,61 @@ font-size: larger;
 
 }
 
-/* ul {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.delete-joke {
+  color: rgb(220, 26, 26);
+	transition: all 0.5s;
+	position: relative;	
 }
 
-ul li {
-  list-style: none;
-}
-
-ul li a {
-  width: 80px;
-  height: 80px;
-  background-color: #808080;
-  text-align: center;
-  line-height: 80px;
-  font-size: 35px;
-  margin: 0 10px;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid #fff;
-  z-index: 1;
-}
-
-ul li a .icon {
-  position: relative;
-  color: #262626;
-  transition: .5s;
-  z-index: 3;
-}
-
-ul li a:hover .icon {
-  color: #fff;
-  transform: rotateY(360deg);
-}
-
-ul li a:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #808080;
-  transition: .5s;
-  z-index: 2;
-}
-
-ul li a:hover:before {
-  top: 0;
-}
-
-ul li:nth-child(1) a:before{
-  background: #808080;
-}
-
-ul li:nth-child(2) a:before{
-  background: #55acee;
-}
-
-ul li:nth-child(3) a:before {
-  background: #0077b5;
-}
-
-ul li:nth-child(4) a:before {
-  background: #dd4b39;
+/* .delete-joke span {
+z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
 } */
+
+.delete-joke::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+  right: 0;
+  bottom: 0;
+  height: 48px;
+  width: 148px;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(18, 227, 25, 0.444);
+  border-radius: 5px;
+	/* background-color: rgba(12, 19, 224, 0.1); */
+}
+.delete-joke::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+  height: 48px;
+  width: 148px;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(235, 15, 15, 0.625);
+  border-radius: 5px;
+	/* background-color: rgba(217, 16, 16, 0.647); */
+}
+.delete-joke:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(194, 26, 26, 0);
+}
+.delete-joke:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(164, 64, 64, 0);
+}
+
+/* .delete-btn{
+  border: none;
+  background-color: clear;
+} */
+
 
 
