@@ -310,6 +310,40 @@ a.page-link:hover{
   background-color: rgba(164, 64, 64, 0);
 }
 
+.form-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  height: 100%;
+  width: auto;
+  font-size: xx-large;
+  font-family: 'Special Elite','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.new-joke-input{
+  background-color: rgba(244, 230, 225, 0.3);
+  height: 40px;
+  width: 350px;
+  font-size: x-large;
+  border: 1px solid green;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  outline: none;
+  margin-bottom: 50px;
+}
+
+.new-joke-input:focus{
+  border: 1px solid rgb(229, 70, 25);
+  background-color: rgb(255, 255, 255);
+
+}
+
+
+
 
 
 
