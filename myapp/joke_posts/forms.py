@@ -3,6 +3,6 @@ from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired
 
 class JokePostForm(FlaskForm):
-    title = StringField('Title', validators=[DataRequired()])
-    text = TextAreaField('Your Joke', validators=[DataRequired()])
+    title = StringField('Title(2-3 words)', validators=[DataRequired()])
+    text = TextAreaField('Your Joke( a funny one...)', validators=[DataRequired()])
     submit = SubmitField('Post')

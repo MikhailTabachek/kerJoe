@@ -3,10 +3,10 @@
    
 <form method="POST">
     {{form.hidden_tag()}}
-    {{form.email.label}}{{form.email}}<br>
-    {{form.username.label}}{{form.username}}<br>
-    {{form.password.label}}{{form.password}}<br>
-    {{form.pass_confirm.label}}{{form.pass_confirm}}<br>
+    {{form.email.label}}{{form.email(class="new-joke-input")}}<br>
+    {{form.username.label}}{{form.username(class="new-joke-input")}}<br>
+    {{form.password.label}}{{form.password(class="new-joke-input")}}<br>
+    {{form.pass_confirm.label}}{{form.pass_confirm(class="new-joke-input")}}<br>
     {{form.submit()}}
 </form>
 {% endblock %}

@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
    
-<form method="POST">
+<form class="login" method="POST">
     {{form.hidden_tag()}}
-    {{form.email.label}}{{form.email}}<br>
-    {{form.password.label}}{{form.password}}<br>
+    {{form.email.label}}<br>
+    {{form.email(class="new-joke-input")}}<br>
+    {{form.password.label}}<br>
+    {{form.password(class="new-joke-input")}}<br>
     {{form.submit()}}
 
 </form>
