@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="jumbotron">
-  <h1>{{ post.title }}</h1>
-  <h2>Written by: {{post.author.username}}</h2>
+<div class="single-joke">
+  <h1 class="h1-joke">{{ post.title }}</h1>
+  <h2 class="writ-by">Written by: {{post.author.username}}</h2>
   <h3>Published: {{ post.date.strftime('%B %d, %Y') }}</h3>
-  <p>{{post.text}}</p>
+  <p class="joke-text" >{{post.text}}</p>
   {% if post.author == current_user %}
-    <div>
-      <a class="btn btn-secondary" href="{{ url_for('joke_posts.update', joke_post_id=post.id) }}">Update</a>
-      <br>
+    <div class="edit-delete-buttons">
+      <a class="update-joke" href="{{ url_for('joke_posts.update', joke_post_id=post.id) }}">Update Joke</a>
       <form action="{{ url_for('joke_posts.delete_post', joke_post_id=post.id) }}" method="POST">
-        <input class="btn btn-danger" type="submit" value="Delete">
+        <input class="delete-joke" type="submit" value="Delete Joke">
       </form>
     </div>
   {% endif %}
+  <iframe class="joker-button" width="110" height="100" src="https://www.myinstants.com/instant/joker-laugh/embed/" frameborder="0" scrolling="no"></iframe>
 </div>
 {% endblock content %}
