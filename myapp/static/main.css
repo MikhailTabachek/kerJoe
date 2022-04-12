@@ -128,7 +128,6 @@ h3{
   text-align: center;
   transition: .2s;
   background-color: rgba(0, 0, 0, .3);
-  /* background-image: url('https://memegenerator.net/img/images/13424189/cry-laughing.jpg'); */
   background-size: contain;
   border-radius: 100px;
   transition: .8s;
@@ -162,17 +161,12 @@ h3{
   color: rgb(241, 247, 241);
 }
 
-/* .pages{
-  position: absolute;
-  width: 50%;
-  bottom: 10px;
-} */
 .pagination{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
-  /* padding-bottom: 30px; */
+
 }
 
 a.page-link{
@@ -187,7 +181,6 @@ a.page-link{
 
 a.page-link:hover{
   text-shadow: 2px 2px 10px rgb(0, 0, 0);
-  /* color: rgb(18, 18, 92); */
   font-size: 25px;
 }
 
@@ -281,14 +274,6 @@ a.page-link:hover{
 	position: relative;	
 }
 
-/* .delete-joke span {
-z-index: 2;	
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 100%;	
-} */
-
 .delete-joke::before {
 	content: '';
 	position: absolute;
@@ -302,7 +287,7 @@ z-index: 2;
 	transition: all 0.5s;
 	border: 1px solid rgba(18, 227, 25, 0.444);
   border-radius: 5px;
-	/* background-color: rgba(12, 19, 224, 0.1); */
+
 }
 .delete-joke::after {
 	content: '';
@@ -315,7 +300,6 @@ z-index: 2;
 	transition: all 0.5s;
 	border: 1px solid rgba(235, 15, 15, 0.625);
   border-radius: 5px;
-	/* background-color: rgba(217, 16, 16, 0.647); */
 }
 .delete-joke:hover::before {
   transform: rotate(-45deg);
@@ -326,10 +310,7 @@ z-index: 2;
   background-color: rgba(164, 64, 64, 0);
 }
 
-/* .delete-btn{
-  border: none;
-  background-color: clear;
-} */
+
 
 
 
