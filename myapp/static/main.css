@@ -204,6 +204,7 @@ a.page-link:hover{
   line-height: 1.5;
   background-color: #000000;
   transition: .5s;
+  width: 130%;
 }
 
 .single-joke.about:hover{
@@ -415,7 +416,7 @@ a.page-link:hover{
   flex-direction: row;
   align-items: center;
   justify-content:space-between;
-  width: 110%;
+  width: 150%;
 }
 
 .each-project{
@@ -432,6 +433,7 @@ a.page-link:hover{
   font-size: large;
   background-position: center;
   background-size: cover;
+  margin: 0 10px 0 10px;
 }
 
 .each-project:hover{
@@ -529,16 +531,67 @@ a.page-link:hover{
   .container.device{
     background-color: rgba(235, 236, 237, 0.974);
     border-radius: 5px;
-    width: 150%;
+    width: 170%;
   }
 
   .new-joke-input{
     margin: 5px;
+    max-width: 90%;
+  }
+
+  .new-joke-input.field{
+    max-width: 90%;
   }
 
   .container.user-page{
     justify-content: flex-start;
   }
+
+  .container.device.info{
+    width: 195%;
+  }
+
+  .each-project{
+    height: 150px;
+    width: 150px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .projects{
+    justify-content: center;
+  }
+
+  .project-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(16, 16, 16, 0.769);
+    transform: translate(0, 5px);
+    font-size: small;
+    width: 100%;
+    height: 50%;
+    transition: all .5s ease-out;
+    padding: 0 10px;
+    font-family: 'Special Elite','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .project-text.mj{
+    height: 85%;
+    border-radius: 5px 0 5px 0;
+  }
+
+  .single-joke.about{
+    width: auto;
+    height: auto;
+    font-size: x-large;
+    padding: 10px 20px;
+  }
+
+  a.page-link{
+    color: rgb(255, 255, 255);
+  }
+
 }
 
 
