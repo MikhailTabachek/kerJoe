@@ -359,7 +359,6 @@ a.page-link:hover{
   font-family: 'Special Elite','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .new-joke-input:focus{
