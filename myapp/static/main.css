@@ -457,14 +457,50 @@ input.button:hover:after {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  border: 1px solid black;
-  padding: 5%;
+  justify-content:space-between;
+  width: 110%;
+  /* border: 1px solid black; */
+  /* border-radius: 5px; */
 }
 
 .each-project{
-  border: 1px solid greenyellow;
+  display: flex;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 12px;
+  transition: .3s;
+  color: aliceblue;
+  font-size: x-large;
+  background-position: center;
+  background-size: cover;
+}
+
+.each-project:hover{
+  box-shadow: 2px 2px 10px black;
+}
+
+.each-project.tgof{
+  background-image: url("./Images/TGOF.PNG");
+  background-position: center;
+  background-size: cover;
+
+  /* background-color: #6c984a; */
+}
+
+.each-project.tgof{
+  background-image: url("./Images/TGOF.PNG");
+}
+
+.each-project.lmr{
+  background-image: url("./Images/LMR.PNG");
+}
+
+.each-project.mj{
+  background-image: url("./Images/MJ.PNG");
 }
 
 
