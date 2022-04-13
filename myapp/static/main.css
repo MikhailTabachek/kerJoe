@@ -103,6 +103,7 @@ h3{
   margin-top: 15px;
   font-size: larger;
   transform: rotate(-3deg);
+  font-family: 'Special Elite','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .background{
@@ -198,6 +199,29 @@ a.page-link:hover{
   border-radius: 10px;
 }
 
+.single-joke.sj-heigth{
+  justify-content:space-evenly;
+  min-height: 50vh;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6326401.jpg&f=1&nofb=1");
+  background-size: cover;
+  background-position: 50% 20%;
+}
+
+.single-joke.about{
+  text-align: center;
+  padding: 5% 15% ;
+  font-size: 1.4em;
+  line-height: 1.5;
+  background-color: #000000;
+  transition: .5s;
+}
+
+.single-joke.about:hover{
+  background-color: rgb(233, 233, 233);
+}
+
+
+
 .h1-joke{
   flex-grow: inherit;
 }
@@ -205,6 +229,7 @@ a.page-link:hover{
 .joker-button{
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 90px;
 }
 
 .joke-text{
@@ -217,6 +242,7 @@ a.page-link:hover{
   padding: 50px 20px 50px 20px;
   line-height: 25px;
   font-size: larger;
+  background-color: rgba(255, 255, 255, 0.908);
 }
 
 .update-joke{
@@ -427,7 +453,19 @@ input.button:hover:after {
   text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.32), 0px 1px 0px #000000, 0px 1px 0px #000000, 0px 2px 0px #000000;
 }
 
+.projects{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid black;
+  padding: 5%;
+}
 
+.each-project{
+  border: 1px solid greenyellow;
+}
 
 
 

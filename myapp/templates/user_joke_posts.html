@@ -1,25 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container">
-        <div class="jumbotron">
-            <div align="center">
-                <h1>{{user.username}}'s Jokes </h1>
-            </div>
-        </div>
-    {% for post in joke_posts.items %}
-    <h2>
-        <a href="{{url_for('joke_posts.joke_post', joke_post_id=post.id)}}">{{post.title}}</a>
-    </h2>
-    Written By: <a href="{{url_for('users.user_posts', username=post.author.username)}}">{{post.author.username}}</a>
-
-    <p class="text-muted">
-        Published On: {{post.date.strftime("%y-%m-%d")}}
-    </p>
-    <br>
-    <p class="joke-text">{{post.text}}</p>
-    <br>
-    {% endfor %}
+    <div align="center">
+        <h1>{{user.username}}'s Jokes </h1>
     </div>
+    {% for post in joke_posts.items %}
+    <div class="single-joke sj-heigth">
+        <h2>
+            <a class="writ-by" href="{{url_for('joke_posts.joke_post', joke_post_id=post.id)}}">{{post.title}}</a>
+        </h2 >
+        <h2 class="writ-by">
+            Written By: <a class="writ-by" href="{{url_for('users.user_posts', username=post.author.username)}}">{{post.author.username}}</a>
+        </h2>
+        
+        <p class="writ-by">
+            Published On: {{post.date.strftime("%y-%m-%d")}}
+        </p>
+        <br>
+        <p class="joke-text">{{post.text}}</p>
+        <br>
+    </div>
+    {% endfor %}
 
     <nav aria-label="Page Navigation example">
         <ul class="pagination justify-content-center">
