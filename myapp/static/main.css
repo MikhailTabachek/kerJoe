@@ -140,6 +140,7 @@ h3{
 
 .card-title{
   color: aliceblue;
+  font-size: x-large;
 }
 
 
@@ -515,7 +516,29 @@ a.page-link:hover{
     font-size: large;
     background-color: rgba(255, 255, 255, 0.963);
   }
+  .form-group{
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    margin-top: 10%;
+  }
 
+  .form-control-label{
+    font-size: large;
+  }
+
+  .container.device{
+    background-color: rgba(235, 236, 237, 0.974);
+    border-radius: 5px;
+    width: 150%;
+  }
+
+  .new-joke-input{
+    margin: 5px;
+  }
+
+  .container.user-page{
+    justify-content: flex-start;
+  }
 }
 
 

@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="jumbotron">
+<div class="container device">
     <div align="center">
         <h1>Hey {{current_user.username}}</h1>
     </div>
-</div>
 
-<div class="container">
+<div class="container ">
     <form method="POST" action="" enctype="multipart/form-data">
         <div class="form-group">
             {{form.hidden_tag()}}
@@ -25,5 +24,6 @@
             {{form.submit(class='delete-btn post-joke-btn')}}
         </div>
     </form>
+</div>
 </div>
 {% endblock %}
