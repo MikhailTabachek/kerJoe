@@ -482,7 +482,11 @@ a.page-link:hover{
 
 @media only screen and (max-width: 940px) {
   .nav-element{
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .nav{
+    height: fit-content;
   }
 
   h1{
@@ -492,7 +496,7 @@ a.page-link:hover{
   .card{
     color: #000000;
     border-radius: 5px;
-    width: 160%;
+    width: 240px;
     background-color: rgb(232, 233, 234);
   }
 
@@ -523,6 +527,11 @@ a.page-link:hover{
     margin-top: 10%;
   }
 
+  .login{
+    color: aliceblue;
+    width: 250px;
+  }
+
   .form-control-label{
     font-size: large;
   }
@@ -536,6 +545,7 @@ a.page-link:hover{
   .new-joke-input{
     margin: 5px;
     max-width: 90%;
+    font-size: large;
   }
 
   .new-joke-input.field{
