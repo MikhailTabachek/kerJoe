@@ -11,9 +11,7 @@ body{
   background-size: cover;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
-  /* height: 100vh; */
 }
-
 
 .nav{
   display: flex;
@@ -29,16 +27,12 @@ body{
   overflow: hidden;
   background-color: rgb(11, 11, 11);
   background-position: 0% 10%;
-  /* font-family: 'Gloria Hallelujah', cursive; */
-  /* font-family: 'Rubik Glitch', cursive; */
-  /* font-family: 'Special Elite', cursive; */
   transition: .5s;
 }
 
 .nav:hover{
   box-shadow: inset 0px -15px 8px -10px rgb(68,134,96);
 }
-
 
 .nav-link{
   display: flex;
@@ -60,16 +54,13 @@ body{
   color: rgba(255, 255, 255, 0);
 }
 
-
-.card-body{
-}
-
 .nav-right{
   display: flex;
   flex-direction: row;
   margin-right: 20px;
   margin-left: 10px;
 }
+
 .nav-left{
   display: flex;
   flex-direction: row;
@@ -115,7 +106,6 @@ h3{
   width: 75%;
   background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(240, 248, 255, .5),rgba(240, 248, 255, .5),rgba(240, 248, 255, .5), rgba(240, 248, 255, .5));
   border-radius: 10px;
-
 }
 
 .container{
@@ -167,7 +157,6 @@ h3{
   justify-content: center;
   align-items: center;
   margin: 20px;
-
 }
 
 a.page-link{
@@ -225,8 +214,6 @@ a.page-link:hover{
   margin: 0;
 }
 
-
-
 .h1-joke{
   flex-grow: inherit;
 }
@@ -234,7 +221,6 @@ a.page-link:hover{
 .joker-button{
   padding-top: 30px;
   padding-bottom: 30px;
-  /* margin-top: 30px; */
 }
 
 .joke-text{
@@ -372,7 +358,6 @@ a.page-link:hover{
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
-  /* box-shadow: 2px 2px 4px rgb(61, 60, 60); */
 }
 
 .new-joke-input:focus{
@@ -388,7 +373,6 @@ a.page-link:hover{
   max-width: 350px;
   width: 100%;
   font-family: 'Special Elite','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 .field{
@@ -473,13 +457,6 @@ a.page-link:hover{
 
 .each-project.tgof{
   background-image: url("./Images/TGOF.PNG");
-  background-position: center;
-  background-size: cover;
-
-}
-
-.each-project.tgof{
-  background-image: url("./Images/TGOF.PNG");
 }
 
 .each-project.lmr{
@@ -501,8 +478,45 @@ a.page-link:hover{
 }
 
 
+@media only screen and (max-width: 940px) {
+  .nav-element{
+    font-size: 20px;
+  }
 
+  h1{
+    font-size: xx-large;
+  }
 
+  .card{
+    color: #000000;
+    border-radius: 5px;
+    width: 160%;
+    background-color: rgb(232, 233, 234);
+  }
+
+  .card-title{
+    color:rgb(0, 0, 0);
+  }
+
+  div.background{
+    background-image: none;
+  }
+
+  .single-joke{
+    width: 160%;
+  }
+
+  .single-joke.sj-heigth{
+    background-position: 50% -200%;
+  }
+
+  .joke-text{
+    padding: 10px 5px;
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.963);
+  }
+
+}
 
 
 
