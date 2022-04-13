@@ -120,12 +120,12 @@ h3{
 .card{
   border: 2px solid rgb(98, 95, 95);
   margin-bottom: 30px;
-  width: 100%;
+  width: 130%;
   text-align: center;
   transition: .2s;
   background-color: rgba(0, 0, 0, .3);
   background-size: contain;
-  border-radius: 100px;
+  border-radius: 50px;
   transition: .8s;
   color: aliceblue;
   font-family: 'Special Elite','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -183,7 +183,7 @@ a.page-link:hover{
   align-items: center;
   font-family: 'Special Elite','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: white;
-  min-height: 80vh;
+  min-height: 75vh;
   min-width: 80%;
   margin: 40px 0 40px 0;
   border-radius: 10px;
