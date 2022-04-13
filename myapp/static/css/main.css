@@ -459,15 +459,15 @@ a.page-link:hover{
 }
 
 .each-project.tgof{
-  background-image: url("./Images/TGOF.PNG");
+  background-image: url("../Images/TGOF.PNG");
 }
 
 .each-project.lmr{
-  background-image: url("./Images/LMR.PNG");
+  background-image: url("../Images/LMR.PNG");
 }
 
 .each-project.mj{
-  background-image: url("./Images/MJ.PNG");
+  background-image: url("../Images/MJ.PNG");
 }
 
 .other-projects{
