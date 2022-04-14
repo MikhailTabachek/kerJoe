@@ -40,10 +40,25 @@ To build this website I've used:
 
 ![](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
+
 ![](	https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 
+![](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
 
+![](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+
+![](https://img.shields.io/badge/Jinja-092E20?style=for-the-badge&logo=jinja&logoColor=white)
+
+
+While coding:
+
+![](https://img.shields.io/badge/YouTube_Music-FF0000?style=for-the-badge&logo=youtube-music&logoColor=white)
+
+
+
+
+&nbsp;
 
 Credits:
 
