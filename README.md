@@ -18,7 +18,6 @@ Click **[here](https://kerjoe.herokuapp.com)** here to visit the page.
 
 **About this website**
 
-&nbsp;
 
 As a guest, you can view the list of jokes. If you want to add your joke you need to register and to be logged in. Once you logged in, you can edit or delete only your jokes. To read a joke, you need to click on "Read a Joke". On each joke page, you can find a button, if you click on it, you will hear a Joker's laugh.
 
