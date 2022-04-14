@@ -479,14 +479,45 @@ a.page-link:hover{
   color: #000000;
 }
 
+.hamburger{
+  display: none;
+}
+
 
 @media only screen and (max-width: 940px) {
   .nav-element{
     font-size: 18px;
+    margin-top: 10px;
   }
 
   .nav{
-    height: fit-content;
+    flex-direction:column;
+    justify-content: space-evenly;
+    height: 8%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+  }
+
+  .hamburger{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  .nav:hover{
+    height: 30%;
+  }
+  
+  .nav-left{
+    flex-direction: column;
+    margin-top: 26px;
+  }
+
+  .nav-right{
+    flex-direction: column;
   }
 
   h1{
@@ -561,14 +592,14 @@ a.page-link:hover{
   }
 
   .each-project{
-    height: 150px;
-    width: 150px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .projects{
+    flex-direction: column;
     justify-content: center;
+    width: fit-content;
   }
 
   .project-text{
